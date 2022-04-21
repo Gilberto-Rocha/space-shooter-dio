@@ -66,7 +66,7 @@ function moveLaser(laser) {
         let xPosition = parseInt(laser.style.left);
         let aliens = document.querySelectorAll('.alien');
 
-        aliens.forEach((alien) => { //comparando se cada alien foi atingido, se sim, troca o src da imagem
+        aliens.forEach((alien) => { //comparando se cada alien foi atingido, se sim, troca o src da imagem//
             if(checkLaserCollision(laser, alien)) {
                 alien.src = 'img/explosion.png';
                 alien.classList.remove('alien');
@@ -111,7 +111,7 @@ function moveAlien(alien) {
     }, 30);
 }
 
-//função para  colisão
+//função para  colisão//
 function checkLaserCollision(laser, alien) {
     let laserTop = parseInt(laser.style.top);
     let laserLeft = parseInt(laser.style.left);
